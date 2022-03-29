@@ -17,35 +17,33 @@
 </head>
     <body>
         <!--로그인창,todo창-->
-        <!-- <form class="hidden" id="login-form" >
+        <div class="todo-box">
+        <form class="hidden" id="login-form" >
             <input required maxlength="20" type="text" placeholder="What is you name?"/>
         </form>
-        <form class="hidden" id="login-form">
-        </form>
+            <form class="hidden" id="login-form"></form>
             <div class="hidden" id="greeting"></div> 
-        <div class="todo-box">
-        <form id="todo-form">
-            <input type="text" placeholder="TO Do List" required/>
-        </form>
-        </div>
-        <ul id="todo-list">
-            <li><span></span><button></button>
-            </li>
-        </ul> --> 
+        
+            <form id="todo-form">
+                <input type="text" placeholder="TO Do List" required/>
+            </form>
+            <ul id="todo-list">
+                <li><span></span><button></button>
+                </li>
+            </ul>
+        </div> 
         <!--뉴스-->
-                <div id="left-screen">
+                <div class="left-screen">
                 <div class="news-bigtitle"><h1>Boxing News</h1></div>   
                 <div class="news-box">
                     <div class="news-box-list"></div>
                 </div>
             </div>
         <!--음악-->
-            <div id="musicPlayer">
-                <audio id="audio" src="Eminem-lose-yourself.mp3" type="audio/mpeg"></audio>
-                <div id="playbutton">▶︎</div>
-                <div id="stopbutton">◼︎</div>
-            </div>
-
+        <audio autoplay controls loop muted preload="xxx">
+            <source src="Eminem-lose-yourself.mp3" type="audio/mp3">
+            <source src="Eminem-Godzilla.mp3" type="audio/mp3">
+          </audio>
         <!--시계,날씨,명언-->
             <h2 id="clock">00:00:00</h2>
             <div id="weather-wrap">
@@ -61,10 +59,10 @@
             <div class="menu__body">
             <nav>
                 <div id="underline"></div>
-                <a id="menuNews" href="#">News</a>
-                <a id="menuToDo" href="#">ToDo</a>
+                <a id="menuNews" href="#">Remove News</a>
+                <a id="menuToDo" href="#">Add News</a>
             </nav>
-        </div> -->
+            </div>
         <!--js연동-->
         <script src="js/greeting.js"></script>
         <script src="js/clock.js"></script>
@@ -73,7 +71,8 @@
         <script src="js/todo.js"></script>    
         <script src="js/weather.js"></script>   
         <script src="js/news.js"></script>
-        <script src="js/music.js"></script>
         <script src="js/menu.js"></script>
+
+        
     </body>
 </html>

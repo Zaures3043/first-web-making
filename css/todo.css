@@ -1,14 +1,19 @@
 
 .todo-box {
-    background-color: LightSlateGrey;
-    width: 17vw;
-    height: 80vh;
+    position: absolute;
+    background: none;
+    width: 15vw;
+    height: 45vh;
+    top: 15%;
+    left: 82%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border-radius: 10%;
+    border-radius: 5%;
     margin-top: 50px;
-    margin-left: 10px;
+    margin-left: 25px;
+    border: 2px solid;
+    border-color: white;
 }
 
 input[type=text] {
@@ -29,14 +34,14 @@ input[type=text] {
 #todo-list {
     color: white;
     position: absolute;
-    left: 2%;
-    top: 22%;
+    left: 3.5%;
+    top: 23%;
 }
 
 #todo-form {
     color: white;
     position: absolute;
-    left: 3%;
+    left: 10%;
     top: 20%;  
 }
 
