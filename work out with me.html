@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bg.css" />
+    <link rel="stylesheet" href="css/clock.css" />
+    <link rel="stylesheet" href="css/greeting.css" />
+    <link rel="stylesheet" href="css/music.css" />
+    <link rel="stylesheet" href="css/news.css" />
+    <link rel="stylesheet" href="css/quote.css" />
+    <link rel="stylesheet" href="css/todo.css" />
+    <link rel="stylesheet" href="css/weather.css" />
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Workout with Me</title>
+</head>
+    <body>
+        <!--로그인창,todo창-->
+        <!-- <form class="hidden" id="login-form" >
+            <input required maxlength="20" type="text" placeholder="What is you name?"/>
+        </form>
+        <form class="hidden" id="login-form">
+        </form>
+            <div class="hidden" id="greeting"></div> 
+        <div class="todo-box">
+        <form id="todo-form">
+            <input type="text" placeholder="TO Do List" required/>
+        </form>
+        </div>
+        <ul id="todo-list">
+            <li><span></span><button></button>
+            </li>
+        </ul> --> 
+        <!--뉴스-->
+                <div id="left-screen">
+                <div class="news-bigtitle"><h1>Boxing News</h1></div>   
+                <div class="news-box">
+                    <div class="news-box-list"></div>
+                </div>
+            </div>
+        <!--음악-->
+            <div id="musicPlayer">
+                <audio id="audio" src="Eminem-lose-yourself.mp3" type="audio/mpeg"></audio>
+                <div id="playbutton">▶︎</div>
+                <div id="stopbutton">◼︎</div>
+            </div>
+
+        <!--시계,날씨,명언-->
+            <h2 id="clock">00:00:00</h2>
+            <div id="weather-wrap">
+                <div id="country"><span></span></div>
+                <div id="temperature"><span></span></div>
+                <div id="condition"><span></span></div>
+            </div>
+            <div id="quote">
+                <span></span>
+                <span></span>
+            </div>
+        <!--메뉴바-->
+            <div class="menu__body">
+            <nav>
+                <div id="underline"></div>
+                <a id="menuNews" href="#">News</a>
+                <a id="menuToDo" href="#">ToDo</a>
+            </nav>
+        </div> -->
+        <!--js연동-->
+        <script src="js/greeting.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>    
+        <script src="js/weather.js"></script>   
+        <script src="js/news.js"></script>
+        <script src="js/music.js"></script>
+        <script src="js/menu.js"></script>
+    </body>
+</html>

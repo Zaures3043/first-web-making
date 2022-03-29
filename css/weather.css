@@ -1,0 +1,13 @@
+
+#weather-wrap {
+    color: white;
+    position: absolute;
+    left: 96%;
+    top: 9%;
+    font-size: 15px;
+    border-radius: 15%;
+}
+#weather-wrap:hover {
+    transition: .35s;
+    transform: scale(1.1);
+}

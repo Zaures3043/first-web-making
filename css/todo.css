@@ -1,0 +1,55 @@
+
+.todo-box {
+    background-color: LightSlateGrey;
+    width: 17vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10%;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+input[type=text] {
+    color: white;
+    background: none;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid;
+    border-color: white;
+    height: 20px;
+    width: 220px;
+    font-size: 20px;
+}
+/*todolist 입력창*/
+
+
+
+#todo-list {
+    color: white;
+    position: absolute;
+    left: 2%;
+    top: 22%;
+}
+
+#todo-form {
+    color: white;
+    position: absolute;
+    left: 3%;
+    top: 20%;  
+}
+
+
+button {
+    background-color:white;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+input[type=text]:hover {
+    background: gray;
+    transition: .35s;
+    border-radius: 10%;
+    transform: scale(1.05);
+}

@@ -1,0 +1,12 @@
+
+#quote {
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 97%;
+}
+
+#quote:hover {
+    transition: .35s;
+    transform: scale(1.05);
+}

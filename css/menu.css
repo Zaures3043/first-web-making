@@ -1,0 +1,46 @@
+
+.menu__body{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.menu__body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 0vh;
+    width:19%;
+}
+nav{
+    position: relative;
+    display: flex;
+}
+nav a{
+    position: relative;
+    margin: 10px 20px;
+    font-size:15px;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    transition: .35s;
+    transform: scale(1.10);
+}
+
+nav #underline{
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background: white;
+    bottom: -10px;
+    transition: 0.15s;
+    border-radius: 5px;
+
+}
+
+.hidden_leftscreen {
+    display: none;
+}

@@ -1,0 +1,29 @@
+#left-screen{
+    background-color:none;
+    width: 17vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 25px;
+    border-radius: 5%;
+    border: 2px solid;
+    border-color: white;
+}
+.news-bigtitle {
+    color:white;
+    display: flex;
+    margin: 0px;
+}
+
+.news-box-list:hover {
+    transition: .35s;
+    transform: scale(1.05);
+}
+
+.news-bigtitle:hover {
+    transition: .35s;
+    transform: scale(1.05);
+}
+
