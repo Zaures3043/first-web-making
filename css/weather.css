@@ -1,9 +1,9 @@
 
 #weather-wrap {
     color: white;
-    position: absolute;
+    position: fixed;
     left: 96%;
-    top: 9%;
+    top: 6%;
     font-size: 15px;
     border-radius: 15%;
 }
@@ -11,3 +11,4 @@
     transition: .35s;
     transform: scale(1.05);
 }
+

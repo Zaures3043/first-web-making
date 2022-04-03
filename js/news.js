@@ -65,7 +65,7 @@ function makeNewsHtml(title, url, urlImage) {
 
 function init() {
 // news api 연동
-    const query = `floyd Mayweather`;
+    const query = `mayweather`;
     const encodeQuery = encodeURI(query);
 
     fetch(`https://free-news.p.rapidapi.com/v1/search?q=${encodeQuery}&lang=en`, {

@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/bg.css" />
-    <link rel="stylesheet" href="css/clock.css" />
+    <link rel="stylesheet" href="css/clock.css" />   
+    <link rel="stylesheet" href="css/quote.css" />
+    <link rel="stylesheet" href="css/weather.css" />
     <link rel="stylesheet" href="css/greeting.css" />
     <link rel="stylesheet" href="css/music.css" />
     <link rel="stylesheet" href="css/news.css" />
-    <link rel="stylesheet" href="css/quote.css" />
     <link rel="stylesheet" href="css/todo.css" />
-    <link rel="stylesheet" href="css/weather.css" />
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/youtube.css">
     <title>Workout with Me</title>
 </head>
     <body>
         <!--로그인창,todo창-->
-        <div class="todo-box">
+        <div class="hidden_todo-box">
         <form class="hidden" id="login-form" >
             <input required maxlength="20" type="text" placeholder="What is you name?"/>
         </form>
@@ -33,16 +35,17 @@
             </ul>
         </div> 
         <!--뉴스-->
-                <div class="left-screen">
-                <div class="news-bigtitle"><h1>Boxing News</h1></div>   
+            <div class="hidden_leftscreen">
+                <div class="news-bigtitle"><span>Boxing News</span></div>   
                 <div class="news-box">
                     <div class="news-box-list"></div>
                 </div>
             </div>
         <!--음악-->
-        <audio autoplay controls loop muted preload="xxx">
+        <audio controls >
+            <source src="Eminem - Godzilla.mp3" type="audio/mp3">
             <source src="Eminem-lose-yourself.mp3" type="audio/mp3">
-            <source src="Eminem-Godzilla.mp3" type="audio/mp3">
+
           </audio>
         <!--시계,날씨,명언-->
             <h2 id="clock">00:00:00</h2>
@@ -51,18 +54,34 @@
                 <div id="temperature"><span></span></div>
                 <div id="condition"><span></span></div>
             </div>
-            <div id="quote">
+            <!-- <div id="quote">
                 <span></span>
                 <span></span>
-            </div>
+            </div> -->
         <!--메뉴바-->
             <div class="menu__body">
             <nav>
                 <div id="underline"></div>
-                <a id="menuNews" href="#">Remove News</a>
-                <a id="menuToDo" href="#">Add News</a>
+                <a id="menuNews" href="#">News</a>           
+                <a id="menuYoutube" href="#">Youtube</a>
+                <a id="menuTodo" href="#">Todo</a>
             </nav>
             </div>
+        <!-- 유튜브 -->
+        <form class ="hidden_youtubeBar">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yB3Uk2VIE-8"
+             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tKurb5X8GKU" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KxF3T1JNxss" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BAEXBcnDbMg?controls=0" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </form>
         <!--js연동-->
         <script src="js/greeting.js"></script>
         <script src="js/clock.js"></script>
@@ -71,8 +90,6 @@
         <script src="js/todo.js"></script>    
         <script src="js/weather.js"></script>   
         <script src="js/news.js"></script>
-        <script src="js/menu.js"></script>
-
-        
+        <script src="js/menu.js"></script>  
     </body>
 </html>

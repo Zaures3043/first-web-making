@@ -13,35 +13,51 @@ item.forEach(link =>{
 })
 // menu bar 효과
 
-
-
-
-const LEFTSCREEN_ELEMENT = document.querySelector(".left-screen");
+const LEFTSCREEN_ELEMENT = document.querySelector(".hidden_leftscreen");
 const menuNews = document.querySelector("#menuNews");
-const menuToDo = document.querySelector("#menuToDo");
 
-const HIDDEN_NEWSCLASS = "hidden_leftscreen"
+const YOUTUBEBAR_ELEMENT = document.querySelector(".hidden_youtubeBar");
+const menuYoutube = document.querySelector("#menuYoutube");
+
+const TODOBOX_ELEMENT = document.querySelector(".hidden_todo-box");
+const menuTodo = document.querySelector("#menuTodo"); 
 
 
-function clickNewsBad(event) {
-    LEFTSCREEN_ELEMENT.classList.remove(HIDDEN_NEWSCLASS);
+function clickNews() {
+  YOUTUBEBAR_ELEMENT.className = "hidden_youtubeBar";
+  TODOBOX_ELEMENT.className = "hidden_todo-box";
+  if(LEFTSCREEN_ELEMENT.className === "hidden_leftscreen"){
+    LEFTSCREEN_ELEMENT.className = "left-screen";
+  }else{
+    LEFTSCREEN_ELEMENT.className = "hidden_leftscreen";
+  }
 }
 
-function clickNewsGood(event) {
-    LEFTSCREEN_ELEMENT.classList.add(HIDDEN_NEWSCLASS);
+menuNews.addEventListener("click", clickNews);
+//add,remove news code
+
+
+
+function clickYoutube() {
+  LEFTSCREEN_ELEMENT.className = "hidden_leftscreen";
+  TODOBOX_ELEMENT.className = "hidden_todo-box";
+  if(YOUTUBEBAR_ELEMENT.className === "hidden_youtubeBar"){
+    YOUTUBEBAR_ELEMENT.className = "youtubeBar";
+  }else{
+    YOUTUBEBAR_ELEMENT.className = "hidden_youtubeBar";
+  }
 }
+menuYoutube.addEventListener("click", clickYoutube);
+//add,remove youtube code
 
 
-
-// function clickNews() {
-//     if(LEFTSCREEN_ELEMENT.classList.contains(HIDDEN_NEWSCLASS)) {
-//     clickNewsBad;
-//   }else{
-//     clickNewsGood;
-//   }
-// }
-
-menuNews.addEventListener("click", clickNewsGood);
-menuToDo.addEventListener("click", clickNewsBad);
-
-
+function clickTodo() {
+  YOUTUBEBAR_ELEMENT.className = "hidden_youtubeBar";
+  LEFTSCREEN_ELEMENT.className = "hidden_leftscreen";
+  if(TODOBOX_ELEMENT.className === "hidden_todo-box"){
+    TODOBOX_ELEMENT.className = "todo-box";
+  }else{
+    TODOBOX_ELEMENT.className = "hidden_todo-box"
+  }
+}
+menuTodo.addEventListener("click", clickTodo);

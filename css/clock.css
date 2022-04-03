@@ -2,8 +2,8 @@
 #clock {
     display: inline-block;
     color: white;
-    position: absolute;
-    top:1%;
+    position: fixed;
+    top: -2%;
     left: 90%;
     width: 180px;
     height: 45px;
@@ -15,3 +15,5 @@
     transition: .35s;
     transform: scale(1.1);
 }
+
+

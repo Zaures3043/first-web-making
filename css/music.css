@@ -1,9 +1,10 @@
+
 audio {
     position: absolute;
     width: 15vw;
     height: 3vh;
-    top: 70%;
-    left: 83.5%;
+    top: 95%;
+    left: 84%;
 }
 audio:hover {
     transition: .35s;

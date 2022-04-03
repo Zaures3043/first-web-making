@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    position: inherit;
 }
 .menu__body{
     display: flex;
@@ -42,5 +43,13 @@ nav #underline{
 }
 
 .hidden_leftscreen {
+    display: none;
+}
+
+.hidden_youtubeBar {
+    display: none;
+}
+
+.hidden_todo-box {
     display: none;
 }

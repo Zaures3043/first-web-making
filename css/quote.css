@@ -1,7 +1,7 @@
 
 #quote {
     color: white;
-    position: absolute;
+    position: fixed;
     left: 40%;
     top: 97%;
 }
@@ -10,3 +10,4 @@
     transition: .35s;
     transform: scale(1.05);
 }
+
